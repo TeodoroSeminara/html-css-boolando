@@ -14,10 +14,6 @@ ul {
     list-style-type: none;
 }
 
-li {
-    padding: 5px;
-}
-
 a {
     text-decoration: none;
     color: white;
@@ -26,8 +22,8 @@ a {
 
 header {
     background-color: #FF6900;
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     position: fixed;
     z-index: 800;
     top: 0;
@@ -38,6 +34,7 @@ header {
     width: 80%;
     display: flex;
     color: white;
+    margin: 0 auto;
     /* debug */
 
 }
@@ -55,6 +52,11 @@ header {
     display: flex;
     justify-content: space-between;
     text-align: center;
+}
+
+.nav-list li {
+    padding: 0px 5px;
+    font-weight: 600;
 }
 
 .nav-text {
@@ -81,7 +83,7 @@ main {
 
 .container-grid {
     width: 80%;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .row {
@@ -156,8 +158,9 @@ main {
     right: 0;
 }
 
-.heart:hover .heart-hover {
+.heart:hover span {
     color: red;
+    cursor: move;
 }
 
 .target{
@@ -186,4 +189,50 @@ main {
     background-color: green;
     position: absolute;
     bottom: 80px; 
+}
+
+/* Footer */
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+#footer-container {
+    margin: 0 auto;
+    padding: 50px;
+    width: 80%;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text {
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.list-footer {
+    display: flex;
+    margin-top: 10px;
+}
+
+li:hover a{
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+.list-footer li {
+    padding-right: 10px;
+}
+
+.icon-right {
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+li:hover i {
+    color: rgb(139, 236, 245);
 }
