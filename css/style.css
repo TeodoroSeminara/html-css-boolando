@@ -18,6 +18,7 @@ a {
     text-decoration: none;
     color: white;
 }
+
 /*  Header */
 
 header {
@@ -44,7 +45,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-        /* debug */
+    /* debug */
     /* background-color: yellow; */
 }
 
@@ -68,10 +69,15 @@ header {
     display: flex;
 }
 
+.nav-icon li {
+    padding: 0 6px;
+}
+
 #logo {
     width: 15%;
     margin: 10px 0;
 }
+
 
 /* Main */
 
@@ -127,22 +133,32 @@ main {
 }
 
 .price-cut {
-    text-decoration: line-through ;
+    text-decoration: line-through;
     font-size: 16px;
 }
 
 /* Overlay */
 
-.img-col:hover .pre-hover{
+.img-col:hover .pre-hover {
     display: none;
 }
-.img-hover{
-    display: none;
-        cursor: pointer;
-} 
 
-.img-col:hover .img-hover{
+.img-hover {
+    display: none;
+    cursor: pointer;
+}
+
+.img-col:hover .img-hover {
     display: block;
+}
+
+li:hover a {
+    cursor: pointer;
+    text-decoration-line: underline;
+}
+
+li:hover i {
+    color: rgb(56, 56, 56);
 }
 
 /* position */
@@ -163,8 +179,8 @@ main {
     cursor: move;
 }
 
-.target{
-/* 
+.target {
+    /* 
     width: 40px;
     height: 20px; */
     color: white;
@@ -182,13 +198,13 @@ main {
     background-color: green;
     position: absolute;
     bottom: 80px;
-    left: 50px;   
+    left: 50px;
 }
 
 .sustainability-left {
     background-color: green;
     position: absolute;
-    bottom: 80px; 
+    bottom: 80px;
 }
 
 /* Footer */
@@ -219,11 +235,6 @@ footer {
     margin-top: 10px;
 }
 
-li:hover a{
-    cursor: pointer;
-    text-decoration-line: underline;
-}
-
 .list-footer li {
     padding-right: 10px;
 }
@@ -231,8 +242,4 @@ li:hover a{
 .icon-right {
     font-size: 20px;
     margin-left: 20px;
-}
-
-li:hover i {
-    color: rgb(139, 236, 245);
 }
