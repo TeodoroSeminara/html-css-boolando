@@ -126,9 +126,14 @@ main {
 
 /* Overlay */
 
-.pre-hover:hover {
+.img-col:hover .pre-hover{
     display: none;
-    cursor: pointer;
 }
- 
-.img-col:
+.img-hover{
+    display: none;
+        cursor: pointer;
+} 
+
+.img-col:hover .img-hover{
+    display: block;
+}
