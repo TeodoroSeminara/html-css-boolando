@@ -29,6 +29,7 @@ header {
     display: flex;
     justify-content: center;
     position: fixed;
+    z-index: 800;
     top: 0;
     width: 100%;
 }
@@ -102,6 +103,10 @@ main {
     /* background-size: cover; */
 }
 
+.img-col {
+    position: relative;
+}
+
 /* Text decoration */
 
 .brand {
@@ -136,4 +141,49 @@ main {
 
 .img-col:hover .img-hover{
     display: block;
+}
+
+/* position */
+
+.heart {
+    height: 60px;
+    width: 60px;
+    font-size: 50px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.heart:hover .heart-hover {
+    color: red;
+}
+
+.target{
+/* 
+    width: 40px;
+    height: 20px; */
+    color: white;
+    font-weight: 600;
+    padding: 3px;
+}
+
+.discount {
+    background-color: red;
+    position: absolute;
+    bottom: 80px;
+}
+
+.sustainability {
+    background-color: green;
+    position: absolute;
+    bottom: 80px;
+    left: 50px;   
+}
+
+.sustainability-left {
+    background-color: green;
+    position: absolute;
+    bottom: 80px; 
 }
