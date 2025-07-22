@@ -28,6 +28,9 @@ header {
     background-color: #FF6900;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 #header-container {
@@ -65,4 +68,32 @@ header {
 #logo {
     width: 15%;
     margin: 10px 0;
+}
+
+/* Main */
+
+main {
+    padding-top: 80px;
+}
+
+/* Griglia */
+
+.container-grid {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.col {
+    width: calc((100% / 3) - (40px / 3));
+
+    /* debug */
+    background-color: blue;
+    height: 300px;
+    border: 1px solid black;
 }
