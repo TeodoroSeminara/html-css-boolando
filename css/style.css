@@ -40,6 +40,7 @@ header {
 
 }
 
+/* navbar */
 .nav-container {
     display: flex;
     justify-content: space-between;
@@ -72,6 +73,8 @@ header {
 .nav-icon li {
     padding: 0 6px;
 }
+
+/* logo */
 
 #logo {
     width: 15%;
@@ -164,8 +167,9 @@ li:hover i {
 /* position */
 
 .heart {
-    height: 60px;
-    width: 60px;
+    /* height: 60px;
+    width: 60px; */
+    padding: 0 10px;
     font-size: 50px;
     text-align: center;
     background-color: rgb(255, 255, 255);

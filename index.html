@@ -14,6 +14,8 @@
 <body>
     <!-- Intestazione -->
     <header>
+
+        <!-- correzione : potrei fare un container generale da usare poi per head-main-foot cosi da impostare la width -->
         <section id="header-container">
             <div class="nav-container">
                 <nav class="nav-list">
@@ -41,20 +43,23 @@
                 <div class="col">
                     <div class="img-col">
                         <img class="pre-hover" src="img/1.webp" alt="modello">
-
+                        <!-- correzione: usando display block per tutte le immagini eviti che faccia lo scalino e di mettere un div -->
                         <div class="img-hover">
                             <img class="hover-img" src="img/1b.webp" alt="modello">
                         </div>
+                        <!-- correzione: inserendo la parte testuale in un contenitore si può evitare che l'hover si attivi quando vai sul testo -->
                         <span class="brand">Levi's</span>
                         <br>
                         <span class="details">RELAXED FIT TEE UNISEX</span>
                         <br>
                         <span class="price-discount">14.99 &euro;</span>
+                        <!-- correzione: esiste il tag DEL per fare il barrato -->
                         <span class="price-cut">29.99 &euro;</span>
 
                         <div class="heart">
                             <span class="heart-hover">&hearts;</span>
                         </div>
+                        <!-- correzione: avrei potuto fare un div in absolute piuttosto che due etichette -->
                         <div class="target discount">
                             -50%
                         </div>
@@ -186,6 +191,8 @@
                 <div class="list-footer-container">
 
                     <span class="footer-text">Boolando s.r.l</span>
+
+                    <!-- correzione: essendo footer potrei non usare le UL -->
 
                     <ul class="list-footer">
                         <li><a href="#">Informazioni legali</a></li>
